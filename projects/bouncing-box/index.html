@@ -8,7 +8,7 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-color: rgba(117, 185, 195, 0.612);
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -26,7 +26,7 @@
 </head>
 <body class="board">
 	<!-- HTML for the box -->
-	<div class="box">?</div>
+	<div class="box">TS</div>
 
 	<script>
 		(function(){
@@ -63,16 +63,16 @@
 			
 			// TODO 2 - Variable declarations 
 			
-
-			
+             var positionX = 0;
+             
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
 			function update() {
-				
-
+				moveBoxTo(positionX);
+				positionX = positionX + 10;
 			};
 
 			/* 
@@ -81,8 +81,8 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				
-
+			positionX = 0;	
+            moveBoxTo(positionX);
 
 			};
 		})();
