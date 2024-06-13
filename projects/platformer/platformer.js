@@ -45,7 +45,8 @@ $(function () {
     // example usage: createPlatform(x,y,width,height)
 createPlatform(0, 500, 350, 250)
 createPlatform(400, 500, 200, 250)
-   
+createPlatform(700, 500, 300, 250)   
+createPlatform(1100, )
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
@@ -61,7 +62,7 @@ createPlatform(400, 500, 200, 250)
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
     createCannon("bottom", 313, 1000)
-    createCannon("bottom", )
+    createCannon("bottom", 590, 1000)
 
 
     /////////////////////////////////////////////////
